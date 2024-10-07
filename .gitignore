@@ -1,3 +1,5 @@
 __pycache__
 task_cli_project*
 venv
+.vscode
+.pytest_cache
