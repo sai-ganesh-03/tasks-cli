@@ -35,7 +35,7 @@ This project is a simple Command-Line Interface (CLI) for managing a to-do list.
 
    ```
    .
-   ├── todo_cli.py          # Main CLI file
+   ├── main.py          # Main CLI file
    ├── utils
    │   ├── __init__.py      # Initialize utils module
    │   ├── utils.py         # Utility functions for todo management
@@ -45,47 +45,50 @@ This project is a simple Command-Line Interface (CLI) for managing a to-do list.
    ```
 
 ## Usage
-
+0. **Run the command:**
+   ```bash
+   pip install --editable .
+   ```
 1. **Add a new todo:**
 
    ```bash
-   python todo_cli.py add "Your task description"
+   tasks-cli add "Your task description"
    ```
 
 2. **List todos:**
 
    - List all tasks:
      ```bash
-     python todo_cli.py list
+     tasks-cli list
      ```
 
    - List todos by status (`done` or `in-progress`):
      ```bash
-     python todo_cli.py list done
+     tasks-cli list done
      ```
 
 3. **Delete a todo:**
 
    ```bash
-   python todo_cli.py delete <todo_id>
+   tasks-cli delete <todo_id>
    ```
 
 4. **Update a todo's description:**
 
    ```bash
-   python todo_cli.py update <todo_id> "New description"
+   tasks-cli update <todo_id> "New description"
    ```
 
 5. **Mark a todo as in-progress:**
 
    ```bash
-   python todo_cli.py mark-in-progress <todo_id>
+   tasks-cli mark-in-progress <todo_id>
    ```
 
 6. **Mark a todo as done:**
 
    ```bash
-   python todo_cli.py mark-done <todo_id>
+   tasks-cli mark-done <todo_id>
    ```
 
 ## Todo Class
@@ -110,7 +113,7 @@ The `Status` class is an enumeration that defines three possible states for task
 1. Add a new task:
 
    ```bash
-   python todo_cli.py add "Finish project documentation"
+   tasks-cli add "Finish project documentation"
    ```
 
    Output:
@@ -121,7 +124,7 @@ The `Status` class is an enumeration that defines three possible states for task
 2. List all tasks:
 
    ```bash
-   python todo_cli.py list
+   tasks-cli list
    ```
 
    Output:
@@ -133,7 +136,7 @@ The `Status` class is an enumeration that defines three possible states for task
 3. Mark the task as done:
 
    ```bash
-   python todo_cli.py mark-done 1
+   tasks-cli mark-done 1
    ```
 
    Output:
