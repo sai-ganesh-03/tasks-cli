@@ -21,8 +21,8 @@ This project is a simple Command-Line Interface (CLI) for managing a to-do list.
 1. **Clone the repository:**
 
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone https://github.com/sai-ganesh-03/tasks-cli.git
+   cd tasks-cli
    ```
 
 2. **Install required dependencies:**
