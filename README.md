@@ -28,7 +28,7 @@ This project is a simple Command-Line Interface (CLI) for managing a to-do list.
 2. **Install required dependencies:**
 
    ```bash
-   pip install click
+   pip install -r requirements.txt
    ```
 
 3. **Directory Structure:**
@@ -37,7 +37,6 @@ This project is a simple Command-Line Interface (CLI) for managing a to-do list.
    .
    ├── main.py          # Main CLI file
    ├── utils
-   │   ├── __init__.py      # Initialize utils module
    │   ├── utils.py         # Utility functions for todo management
    │   ├── todo.py          # Todo class definition
    │   └── status.py        # Status class definition (Done, In Progress)
